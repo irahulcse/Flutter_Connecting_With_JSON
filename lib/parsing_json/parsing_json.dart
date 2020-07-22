@@ -13,7 +13,7 @@ class _JsonParsingState extends State<JsonParsing> {
   @override
   void initState() {
     super.initState();
-    data = Network("jsonplaceholder.typicode.com/posts").fetchData();
+    data = Network("https://jsonplaceholder.typicode.com/posts").fetchData();
   }
 
   @override
@@ -27,7 +27,7 @@ class _JsonParsingState extends State<JsonParsing> {
 
   Future getData() async {
     String url;
-    url = "jsonplaceholder.typicode.com/posts";
+    url = "https://jsonplaceholder.typicode.com/posts";
     var data;
     Network network = Network(url);
     data = network.fetchData();
@@ -47,7 +47,6 @@ class Network {
       print(response.body);
       return response.body;
     } else {
-      print("noy");
       return response.statusCode;
     }
   }
