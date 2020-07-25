@@ -43,7 +43,7 @@ class Network {
     print("$url");
     Response response = await get(Uri.encodeFull(url));
     if (response.statusCode == 200) {
-      print("good");
+     // print("good");
       print(response.body);
       return response.body;
     } else {

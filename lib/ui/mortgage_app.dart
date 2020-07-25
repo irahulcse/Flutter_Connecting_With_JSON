@@ -130,10 +130,10 @@ class _MortgageAppState extends State<MortgageApp> {
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: secondaryBackgroundWhite),
-                                  )) //TODO: theme this!
+                                  ),) //TODO: theme this!
 
                                   ),
-                            )
+                            ) 
                           ],
                         )
                       ],
