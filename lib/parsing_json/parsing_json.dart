@@ -28,10 +28,8 @@ class _JsonParsingState extends State<JsonParsing> {
           // initialData: InitialData,
           builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
             if (snapshot.hasData) {
-              return Text(
-                // snapshot.data[0]['userId'].toString(),
-                return createListView(snapshot.data,context);
-              );
+              // return Text(createListView(data, context),),
+              createListView(snapshot.data, context);
             } else
               return CircularProgressIndicator();
           },
@@ -67,14 +65,34 @@ class Network {
   }
 }
 
-Widget createListView(List data, BuildContext context){
+Widget createListView(List data, BuildContext context) {
   return ListView.builder(
-    // itemCount: 1,
+    itemCount: data.length,
     itemBuilder: (BuildContext context, int index) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-
-    );
-   },
-  ),
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ListTile(
+            subtitle: Text(
+              "${data[index]["title"]}",
+            ),
+            title: Text(
+              "${data[index]["id"]}",
+            ),
+            leading: Column(
+              children: [
+                CircleAvatar(
+                  backgroundColor: Colors.black26,
+                  radius: 24,
+                  child: Text(
+                    "${data[index]["userId"]}",
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
+      );
+    },
+  );
 }
