@@ -1,7 +1,6 @@
 ![Image](images/rovers.jpg)
-# Flutter Pokemon Application :boom:
+# Connecting Flutter to API using Future and Async :boom:
 
-![Flutter_Pokemon_App](https://github.com/irahulcse/Flutter_Pokemon_App/.github/workflows/Flutter%20Web/badge.svg?branch=dev)
 
 Flutter Pokemon Application is a very intutive and nice UI and JSON based Application in this we are basically fetching ther result from the JSON File to create UI. 
 

@@ -76,8 +76,7 @@ Widget createListView(List data, BuildContext context) {
             subtitle: Text(
               "${data[index]["title"]}",
             ),
-            title: Text(
-              "${data[index]["id"]}",
+            title: Text("${data[index]["id"]}",
             ),
             leading: Column(
               children: [
