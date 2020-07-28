@@ -22,6 +22,21 @@ class _JsonParsingState extends State<JsonParsing> {
       appBar: AppBar(
         title: Text("Happiness is the key"),
       ),
+      body: Container(
+        child: FutureBuilder(
+          future: getData(),
+          // initialData: InitialData,
+          builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+            if (snapshot.hasData) {
+              return Text(
+                // snapshot.data[0]['userId'].toString(),
+                return createListView(snapshot.data,context);
+              );
+            } else
+              return CircularProgressIndicator();
+          },
+        ),
+      ),
     );
   }
 
@@ -43,11 +58,23 @@ class Network {
     print("$url");
     Response response = await get(Uri.encodeFull(url));
     if (response.statusCode == 200) {
-     // print("good");
+      // print("good");
       print(response.body);
       return response.body;
     } else {
       return response.statusCode;
     }
   }
+}
+
+Widget createListView(List data, BuildContext context){
+  return ListView.builder(
+    // itemCount: 1,
+    itemBuilder: (BuildContext context, int index) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+
+    );
+   },
+  ),
 }
