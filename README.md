@@ -1,4 +1,4 @@
-![Image](images/rovers.jpg)
+<!-- ![Image](images/rovers.jpg) -->
 # Connecting Flutter to API using Future and Async :boom:
 
 
@@ -14,7 +14,7 @@ Flutter Pokemon Application is a very intutive and nice UI and JSON based Applic
   
 ### Screenshots and Working GIFS:
 
-<img src="images/rovers.gif" height="300em"  width="250em"/> <img src="images/1.jpg" height="300em" width="250em"/> <img src="images/2.jpg" height="300em" width="250em"/>
+<!-- <img src="images/rovers.gif" height="300em"  width="250em"/> <img src="images/1.jpg" height="300em" width="250em"/> <img src="images/2.jpg" height="300em" width="250em"/> -->
 
 
  Sorry for the quality of the GIF :pray:
