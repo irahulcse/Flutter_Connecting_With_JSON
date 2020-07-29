@@ -1,6 +1,7 @@
 <!-- ![Image](images/rovers.jpg) -->
-# Connecting Flutter to API using Future and Async :boom:
+# Flutter Pokemon Application :boom:
 
+<!-- ![Flutter_Pokemon_App](https://github.com/irahulcse/Flutter_Pokemon_App/.github/workflows/Flutter%20Web/badge.svg?branch=dev) -->
 
 Flutter Pokemon Application is a very intutive and nice UI and JSON based Application in this we are basically fetching ther result from the JSON File to create UI. 
 
@@ -45,7 +46,7 @@ I am currently looking for Full Time/ Internship Offer for any Software Developm
 
 Testing of the Project is Done :heavy_check_mark:
 
-### Basic Workflow/If you want to contribute to this project:
+### Basic Git Workflow/If you want to contribute to this project:
 You can follow the below workflow, if you are new to Git. 
 
 #### Initial setup
